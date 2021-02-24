@@ -1,0 +1,7 @@
+{
+    "git.autofetch": false,
+    "boot-java.remote-apps": [
+    
+    ],
+    "git.ignoreLimitWarning": true
+}
