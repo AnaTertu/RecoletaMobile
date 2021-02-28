@@ -23,15 +23,15 @@ export default function Home(props) {
                 backgroundColor: '#C6DE6F',
             }}
         >
-            <View style={{margin:5, alignItems: 'flex-end'}}>
+            <View style={{margin: 10, alignItems: 'flex-start'}}>
                 <Image source={require('../../assets/logo2.png')} /> 
             </View>
             
-            <View style={{margin:5}}>
+            <View style={{marginTop: -100, alignItems: 'stretch', marginLeft: 230, marginBottom: 5}}>
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
                         marginTop: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Quem Somos'
                     onPress={() => navigation.navigate('QuemSomos')}
@@ -39,7 +39,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -48,7 +48,7 @@ export default function Home(props) {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Jogos'
                     onPress={() => navigation.navigate('Jogos')}
@@ -56,7 +56,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -65,7 +65,7 @@ export default function Home(props) {
                 </TouchableOpacity> 
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Dicas'
                     onPress={() => navigation.navigate('Dicas')}
@@ -73,7 +73,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -83,7 +83,7 @@ export default function Home(props) {
 
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Cadastro'
                     onPress={() => navigation.navigate('Cadastro')}
@@ -91,7 +91,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -101,7 +101,7 @@ export default function Home(props) {
 
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Perfil'
                     onPress={() => navigation.navigate('Perfil')}
@@ -109,7 +109,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -119,7 +119,7 @@ export default function Home(props) {
 
                 <TouchableOpacity
                     style={{
-                        borderRadius: 5,
+                        marginBottom: 5
                     }}
                     title='Ir para Fale Conosco'
                     onPress={() => navigation.navigate('Fale')}
@@ -127,7 +127,7 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
-                            color: '#400',
+                            color: '#42570C',
                             fontSize: 16,
                         }}
                     >
@@ -142,10 +142,11 @@ export default function Home(props) {
                             fontWeight: 'bold',
                             color: '#42570C',
                             marginTop: 5,
-                            paddingLeft: 10
+                            paddingLeft: 10,
+                            fontSize: 20,
                         }}
                     >
-                        O que é a Recoleta?
+                        O que é o Recoleta?
                     </Text>
                     <Text
                         style={{
@@ -181,7 +182,7 @@ export default function Home(props) {
                 <Text
                     style={{
                         fontWeight: 'bold',
-                        color: '#400',
+                        color: '#42570C',
                         fontSize: 18,
                         marginRight: 35,
                         marginBottom: -28
