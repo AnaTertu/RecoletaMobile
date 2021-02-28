@@ -23,6 +23,7 @@ export default function Home(props) {
                 backgroundColor: '#C6DE6F',
             }}
         >
+
             <View style={{margin: 10, alignItems: 'flex-start'}}>
                 <Image source={require('../../assets/logo2.png')} /> 
             </View>
@@ -56,7 +57,9 @@ export default function Home(props) {
                     <Text
                         style={{
                             fontWeight: 'bold',
+
                             color: '#42570C',
+                            color: '#400',
                             fontSize: 16,
                         }}
                     >
@@ -147,6 +150,7 @@ export default function Home(props) {
                         }}
                     >
                         O que é o Recoleta?
+
                     </Text>
                     <Text
                         style={{
