@@ -1,13 +1,13 @@
-import React from 'react';
-import { Text, View, ScrollView, Image } from 'react-native';
+import React from 'react'
+import { Text, View} from 'react-native'
 
-import { useScrollToTop } from '@react-navigation/native';
+import { useScrollToTop } from '@react-navigation/native'
 
-export default function Loja(navigation) {
+export default function Fale(navigation) {
 
-    const ref = React.useRef(null);
+    const ref = React.useRef(null)
 
-    useScrollToTop(ref);
+    useScrollToTop(ref)
 
     return (
         <View 
@@ -21,13 +21,10 @@ export default function Loja(navigation) {
                   justifyContent: 'center',
                   fontSize: 18,
                   fontWeight: 'bold',
-                  textAlign: 'center',
-                  fontFamily: "Reggae One, cursive"
+                  textAlign: 'center'
                   }}>
-                    Nos diga sua sugestão:
+                    Fale......
               </Text>
-              <br/>
-          
         </View>
-    );
+    )
 }
