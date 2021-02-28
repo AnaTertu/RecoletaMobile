@@ -1,40 +1,31 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import Jogos from '.';
+import React from 'react'
+import { Text, View, ScrollView, Image } from 'react-native'
 
-export default function Jogos({ navigation }) {
-    
-    
+import { useScrollToTop } from '@react-navigation/native'
+
+export default function Jogos(navigation) {
+
+    const ref = React.useRef(null)
+
+    useScrollToTop(ref)
+
     return (
         <View 
-        style={{ 
-            margin: 10,
-            paddingTop: 20,
-            flex: 1, 
-            alignItems: "flex-start", 
-            justifyContent: "center",          
-            backgroundColor: "#757",
+            style={{
+              flex:1,
+              padding: 24,
             }}
-        >  
-            <Text style= {{
-                color: "#000", fontSize: 20, 
-                fontFamily: "Reggae One, cursive" 
-                }}
-            >
-                Jogos
-            </Text>
-
-            <Text style= {{
-                color: "#000", fontSize: 20, 
-                fontFamily: "Reggae One, cursive" 
-                }}
-            >
-                Realize primeiro seu cadastro, para acessar os jogos!
-            </Text>
-
-            <Login/>
-
-
+        >
+                <Text 
+                    style={{
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: 18,
+                        fontWeight: 'bold',
+                    }}
+                >
+                        Nos diga sua sugestão:
+                </Text>
         </View>
     )
 }
