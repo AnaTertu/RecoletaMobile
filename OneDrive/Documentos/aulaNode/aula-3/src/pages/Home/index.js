@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Text, View, TouchableOpacity, Image, Button, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 
@@ -9,7 +9,8 @@ import { useScrollToTop } from '@react-navigation/native';
 //import {lazy} from 'react'
 //const Rodape = lazy(() => import('../../scomponents/Rodape'))
 
-export default function Home(props) {
+export default function Home(props){
+
     const { navigation } = props
 
     const ref = React.useRef(null);
@@ -20,14 +21,14 @@ export default function Home(props) {
         <View        
             style={{
                 flex: 1,
-                backgroundColor: '#C6DE6F',
+                backgroundColor: '#CfC'
             }}
         >
             <View style={{margin: 10, alignItems: 'flex-start'}}>
-                <Image source={require('../../assets/logo2.png')} /> 
+                <Image source={require('../../../assets/logo2.png')} /> 
             </View>
             
-            <View style={{marginTop: -100, alignItems: 'stretch', marginLeft: 230, marginBottom: 5}}>
+            <View style={{marginTop: 5, alignItems: 'stretch', marginLeft: 5, marginBottom: 5}}>
                 <TouchableOpacity
                     style={{
                         marginTop: 5,
@@ -53,6 +54,8 @@ export default function Home(props) {
                     title='Ir para Jogos'
                     onPress={() => navigation.navigate('Jogos')}
                 >
+                    <Ionicons name='ios-game-controller' color='#000' size={30} />
+                    {/* <ion-icon ios='ios-game-controller-b' md='md-game-controller-b'></ion-icon> */}
                     <Text
                         style={{
                             fontWeight: 'bold',
@@ -135,6 +138,18 @@ export default function Home(props) {
                     </Text>
                 </TouchableOpacity>
             </View>
+            
+            <View style={{ maxWidth: 100 }}>
+                <Button
+                type='button' 
+                class='btn login' 
+                data-bs-dismiss='modal'
+                color= '#6E5596'
+                fontWeight= 'bold'
+                title = 'Login'
+                onPress={ () => navigation.navigate('Login')}/>
+            </View>
+
             <ScrollView ref={ref}> 
                 <View style={{margin:10}}>
                     <Text
@@ -164,14 +179,8 @@ export default function Home(props) {
                 </View> 
             </ScrollView> 
 
-            <View style={{margin:10}}>
-                <Button  
-                title = 'Login'
-                onPress={ () => navigation.navigate('Login')}/>
-            </View>
-
             <TouchableOpacity
-                onPress={() => navigation.navigate('Login')}
+                onPress={() => navigation.navigate('Fale')}
                 style={{
                     
                     marginBottom: 10,
@@ -189,8 +198,8 @@ export default function Home(props) {
                     }}
                 >
                     Exit
-                </Text>  
-                <Ionicons name='ios-exit' color='#fff' size={30} />
+                </Text>
+                <Ionicons name='ios-exit' color='#000' size={30} />
             </TouchableOpacity>
 
         </View>

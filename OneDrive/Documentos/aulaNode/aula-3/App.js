@@ -21,7 +21,8 @@ const Stack = createStackNavigator()
 export default function App(){
     return(
 
-        <NavigationContainer initialRouteName='Home' headerMode='screen'  >          
+        // <NavigationContainer initialRouteName='Home' headerMode='screen'  >                    
+        <NavigationContainer headerMode='screen'  >          
             <Stack.Navigator>
                 <Stack.Screen name='Home' component={Home} option={{tittle: 'Home'}}/>
                 <Stack.Screen name='QuemSomos' component={QuemSomos} option={{tittle:'Quem Somos'}} />

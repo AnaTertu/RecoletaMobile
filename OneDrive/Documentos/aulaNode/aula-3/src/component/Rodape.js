@@ -1,4 +1,5 @@
 // import React from 'react'
+//import React, {Component} from 'react'
 // import { Ionicons } from '@expo/vector-icons'
 // import { Text, View, ScrollView, Image } from 'react-native'
 
